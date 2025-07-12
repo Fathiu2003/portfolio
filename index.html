@@ -3,40 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fathiu | Portfolio</title>
+  <title>Fathiu | Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+
+  <nav>
+    <div class="logo">FATHIU</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
     <h1>Hi, I'm Fathiu 👋</h1>
-    <p>Aspiring Full-Stack Developer | Digital Marketer | Tech Visionary</p>
+    <p>Professional PHP/MySQL Developer | Digital Marketer | Tech Visionary</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a tech-driven individual passionate about web development, software solutions,
-      and digital innovation. I build websites, solve problems, and help businesses grow online.
-    </p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a tech-savvy developer with a strong foundation in web development, PHP, and MySQL. I build functional and scalable solutions for real-world problems — from student clearance systems to digital business tools.
+      </p>
+    </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Certificate Verification System</strong> – secure PHP/MySQL solution for verifying academic credentials.</li>
-      <li><strong>Student Clearance App</strong> – streamlined clearance process using data mining and automation.</li>
-      <li><strong>This Portfolio</strong> – yep, you're looking at it 👀</li>
-    </ul>
-  </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>🎓 Certificate Verification System</h3>
+          <p>Secure PHP/MySQL platform for validating academic documents. Used by institutions for real-time checks.</p>
+        </div>
+        <div class="project">
+          <h3>✅ Student Clearance App</h3>
+          <p>Automated clearance process powered by data mining to reduce admin bottlenecks and improve speed.</p>
+        </div>
+        <div class="project">
+          <h3>🌐 Portfolio Website</h3>
+          <p>This site you're viewing right now — simple, professional, and 100% GitHub-hosted.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your-email@example.com">bigfatsolutionhub@gmail.com</a></p>
-    <p>WhatsApp: +2348120919155</p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:bigfatsolutionhub@gmail.com">bigfatsolutionhub@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/2348120919155">+234 812 091 9155</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Fathiu. Built with 💻 and ☕</p>
+    <p>&copy; <?= date('Y'); ?> Fathiu. Built with 💻 and ☕</p>
   </footer>
+
 </body>
 </html>
